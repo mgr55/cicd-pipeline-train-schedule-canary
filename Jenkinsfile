@@ -5,11 +5,6 @@ pipeline {
         DOCKER_IMAGE_NAME = "mgr5/train-schedule"
     }
     stages {
-        stage('check build') {
-            steps { 
-                sh 'gradle --version'
-            }
-        }
         stage('Build') {
             steps {
                 echo 'Running build automation'
